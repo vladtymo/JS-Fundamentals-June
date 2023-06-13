@@ -53,7 +53,8 @@ console.log(`Next year: ${currentYear + 1}`);
 if (isNaN(currentYear))
     console.error("Invalid number format!");
 
-// ariphmetic operators: + - * / % **
+
+// -------------- ariphmetic operators: + - * / % **
 let number = +prompt("Enter your number:");
 console.log(`${number} + ${number} = ${number + number}`);
 console.log(`${number} - ${number} = ${number - number}`);
