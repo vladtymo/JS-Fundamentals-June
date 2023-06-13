@@ -53,6 +53,11 @@ console.log(`Next year: ${currentYear + 1}`);
 if (isNaN(currentYear))
     console.error("Invalid number format!");
 
+// confirm() - ask user bool value (yes/no)
+let isContinue = confirm("Do you want to continue?");
+
+if (isContinue) console.log("Let's go forward!");
+else console.log("Stop!");
 
 // -------------- ariphmetic operators: + - * / % **
 let number = +prompt("Enter your number:");
