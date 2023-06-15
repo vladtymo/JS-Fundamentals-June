@@ -36,6 +36,9 @@ console.log(`Undefined value: ${averageMark}, type: ${typeof (averageMark)}`);
 // change variable value, old value deleted
 price = 90;
 
+const PI = 3.14;
+//PI = 3.15; // error
+
 // -------------- browser dialogs
 alert("Hello from Alert!");
 
