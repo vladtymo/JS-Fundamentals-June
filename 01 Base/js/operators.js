@@ -1,5 +1,6 @@
-// ------------ operators ------------
-// ariphmetic operators
+// -=-=-=-=-=-=-=- operators -=-=-=-=-=-=-=-
+
+// ariphmetic operators: + - * / %
 
 console.log(`a + b: ${5 + 3}`); // 8
 console.log(`a - b: ${5 - 3}`); // 2
@@ -7,7 +8,7 @@ console.log(`a * b: ${5 * 3}`); // 15
 console.log(`a / b: ${20 / 4}`); // 1.xxx
 console.log(`a % b: ${5 % 3}`); // 2
 
-// exponentiation **
+// exponentiation: **
 console.log(`a ** b: ${2 ** 8}`);
 
 // logic operators: > < >= <= == !=
