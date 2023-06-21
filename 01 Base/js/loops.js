@@ -1,6 +1,6 @@
 // -=-=-=-=-=-=-=- Loops -=-=-=-=-=-=-=-
 
-// while - цикл з передумовою
+// ----- while - цикл з передумовою
 // syntax: while(condition) { ...code... }
 
 // вічний цикл: цикл, в якого умова завжди = true
@@ -17,6 +17,7 @@ console.warn("Finish!");
 
 // ідентичне виконання за допомогою циклу for
 
+// ----- for - цикл, який виконується певну кількість разів
 // for(initialize; condition; expression) { ...code... }
 for (let i = 1; i < 10; ++i) {
     console.log(`[${i}] - One more iteration...`);
@@ -30,7 +31,7 @@ while (+prompt("Enter your number:") > 0) {
     console.log('Great!');
 }
 
-// do while(): цикл з післяумовою
+// ----- do while() - цикл з післяумовою
 // syntax: do while() { ...code... }
 
 // запросити введення числа, поки воно не буде позитивним
@@ -45,7 +46,7 @@ console.log("Thanks!");
 for (let start = 1, end = 10; start <= 10; ++start, --end)
     console.log(`${start} - ${end}`);
 
-// for in - iterate all object keys
+// ----- for in - iterate all object keys
 // syntax: for (variable in object) {}
 let array = [4, 6, 2, 6, -8, 0, 85, 120, 3];
 let user = {
@@ -74,7 +75,7 @@ console.log('Array values:');
 
 let newArr = [];
 
-// for of - iterate all values of the object
+// ----- for of - iterate all values of the object
 for (let elem of array) {
     ++elem; // change copy, does not effect to original array
     console.log(`Element: ${elem}`);
@@ -82,8 +83,8 @@ for (let elem of array) {
 // show array
 console.log(array);
 
+// TASK: додати в масив 10 цін з випадковим значенням від 0 до 100
 let prices = [];
-// додати в масив 10 цін з випадковим значенням від 0 до 100
 
 console.log(Math.random()); // 0...1 (0.5, 0.999)
 
@@ -96,7 +97,7 @@ for (const price of prices) {
     console.log(`Price: ${price}$`);
 }
 
-// get summ of all prices in the array, when price > 50
+// TASK: get summ of all prices in the array, when price > 50
 let summ = 0;
 
 // 1 - using for loop
