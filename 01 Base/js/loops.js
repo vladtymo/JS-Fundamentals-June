@@ -20,7 +20,12 @@ console.warn("Finish!");
 // ----- for - цикл, який виконується певну кількість разів
 // for(initialize; condition; expression) { ...code... }
 for (let i = 1; i < 10; ++i) {
+    if (i % 4 === 0) continue;
     console.log(`[${i}] - One more iteration...`);
+
+    // break - ends the loop
+    // continue - skips current iteration
+    if (i % 7 === 0) break;
 }
 
 console.log(`a = ${a}`); // 10
@@ -63,7 +68,7 @@ console.log("Array:", array);
 
 console.log('Array indexes:');
 for (let ind in array) {
-    console.log(`Key: ${ind}`); // 0...8
+    console.log(`Key: ${ind}`); // 0...9,12
 }
 
 console.log('User properties:');

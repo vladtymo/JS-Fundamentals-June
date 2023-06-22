@@ -1,6 +1,9 @@
 // -=-=-=-=-=-=-=- Functions -=-=-=-=-=-=-=-
 
 // function declaration: function name(parameters) { ...body... }
+// function expression: function (parameters) { ...body... }
+// arrow function: (parameters) => ...body...
+
 // naming: printSomething() getSmth() setSmth() changeSmth() checkSmth() ...
 
 function showMessage() {
@@ -103,11 +106,14 @@ console.log(getFactorial(5)); // !5 = 1 * 2 * 3 * 4 * 5 = 120
 // ----------- closure -----------
 // TASK: create a closing function to get the next Fibonacci number
 function getFunction() {
+    // outer area
+
     // create variables
     let a = 0;
     let b = 1;
 
     return function () {
+        // inner area
         console.log(a);
         let temp = a;
         a = b;
