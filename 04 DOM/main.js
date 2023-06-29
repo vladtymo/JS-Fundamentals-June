@@ -23,14 +23,14 @@ console.log('Last item:', list.lastElementChild);   // list.children[list.childr
 
 // ------- node properties
 const item = document.querySelector('#third-item');
-// console.log(`Item props: ${item.id}, ${item.nodeName}, ${item.className}`);
+console.log(`Item props: ${item.id}, ${item.nodeName}, ${item.className}`);
 
-// console.log("Item content:", item.textContent);
-// console.log("Item inner HTML:", item.innerHTML);
-// console.log("Item outer HTML:", item.outerHTML);
+console.log("Item content:", item.textContent);
+console.log("Item inner HTML:", item.innerHTML);
+console.log("Item outer HTML:", item.outerHTML);
 
 // simple way to change the element content
-//item.innerHTML = "Change <strong>CSS</strong> styles";
+item.innerHTML = "Change <strong>CSS</strong> styles";
 
 // ----------------- create elements dynamically
 // 1 - using innerHTML
@@ -75,9 +75,7 @@ newItem.getAttribute('name'); // test
 // ----------------- get items by hierarchy
 const secondItem = list.children[1];
 
-const item2 = document.querySelector('#third-item');
-
-console.log("Next sibling:", item2.nextSibling);         // include elements and text nodes
+console.log("Next sibling:", secondItem.nextSibling);         // include elements and text nodes
 console.log("Previous sibling:", secondItem.previousSibling); // include elements and text nodes
 
 console.log("Next sibling element:", secondItem.nextElementSibling); // include elements only
