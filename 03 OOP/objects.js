@@ -77,3 +77,19 @@ for (const key in user) {
 
 // check if the property exists
 console.log("Does user has 'age': ", user.hasOwnProperty("age"));
+
+// ------------ function constructors
+function Account(login, password) {
+    // create properties
+    this.login = login;
+    this.password = password;
+    this.isAdmin = false;
+    this.show = function () {
+        console.log(`Account: ${this.login}`);
+    }
+};
+
+const baseAccount = new Account("super1122", "Qwerty");
+const otherAccount = new Account("bob99", "TestTest");
+
+baseAccount.show();
