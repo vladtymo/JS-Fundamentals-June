@@ -46,6 +46,8 @@ class User {
     }
 
     static checkPassword(value) {
+        // can access to static fields
+        // but does not have [this] keyword
         return value.length >= 6;
     }
 
