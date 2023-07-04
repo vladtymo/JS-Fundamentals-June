@@ -19,3 +19,5 @@ li.important {
 li.muted {
     color: gray;
 }
+
+nav ul li>a.selected {}
