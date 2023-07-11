@@ -32,7 +32,7 @@ console.log("Second match:", pattern.exec(text));
 pattern.lastIndex = 0; // reset index
 console.log("Others matches:", Array.from(text.matchAll(pattern)));
 
-console.log("Replaced string:", text.replace(pattern, "XXX"));
+console.log("Replaced string:", text.replace(pattern, "$1 XXX"));
 
 // TASK: get all words from the line
 const line = "?Hello, Vlad! How are you? Fine.";
@@ -41,3 +41,7 @@ const line = "?Hello, Vlad! How are you? Fine.";
 const words = line.split(/[,.\s!?]+/).filter(x => x.match(/\S/));
 
 console.log("Words:", words);
+
+
+// First, JavaScript!
+// 
