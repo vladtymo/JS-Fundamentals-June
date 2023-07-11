@@ -2,7 +2,8 @@
 
 // ---------- set event handler
 // 2 - using addEventListener()
-btn2.addEventListener("click", () => {
+btn2.addEventListener("click", function () {
+
     console.log("Button 2 Clicked!");
 });
 
