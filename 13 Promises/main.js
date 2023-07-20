@@ -68,7 +68,10 @@ Promise.all([hardWork]).then((values) => {
     console.log("All promises have done!");
 }).catch((err) => console.log(err));
 
-// ------------- [async] & [await]
+// ------------- [async] & [await] -------------
+// introduced in ES8
+// [await] - wait the promise asynhronously
+// [async] - allows to use await operator in function 
 async function showActiveUser() {
     // getActiveUser("198.0.0.3")
     //     .then((user) => {
