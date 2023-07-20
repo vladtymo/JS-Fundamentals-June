@@ -1,0 +1,19 @@
+{
+  "name": "first_node_app",
+  "version": "1.0.0",
+  "description": "This is a sample project on Node.js",
+  "main": "file_system.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "server",
+    "js"
+  ],
+  "author": "Vlad Tymoshchuk",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
